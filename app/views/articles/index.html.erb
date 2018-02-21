@@ -1,21 +1,18 @@
-<h1> Article list </h1>
+<h1> Topics </h1>
 
-<%= link_to 'New article', new_article_path %>
-<table>
+<%= link_to 'New thread', new_article_path %>
+<table class='center_panel'>
   <tr>
     <th>Title</th>
-    <th>Text</th>
   </tr>
 
   <% @articles.each do |article| %>
     <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?'} %></td>
+      <td class='article_title'><%= article.title %></td>
+      <td><%= link_to (pluralize(article.comments.length, 'response')), article_path(article), class: 'index_link' %></td>
+      <td><%= link_to image_tag("edit.png", class: 'logo'), edit_article_path(article)%></td>
+      <td><%= link_to image_tag("delete.png", class: 'logo'), article_path(article), method: :delete, data: { confirm: 'Are you sure?'}%></td>
     </tr>
   <% end %>
 
 </table>
-<br>

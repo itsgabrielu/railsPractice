@@ -8,6 +8,9 @@ def destroy
   @article = Article.find(params[:article_id])
   @comment = @article.comments.find(params[:id])
   @comment.destroy
+  @comments = @article.comments
+  puts 'list'
+  puts @comments
 
   redirect_to article_path(@article)
 end

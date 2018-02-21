@@ -1,0 +1,40 @@
+.logo {
+  height: 20px;
+}
+
+h1 {
+  color: #F9EADB;
+  text-align: center;
+}
+
+.center_panel{
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 10vh;
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
+  /* color: #f7dfc8; */
+}
+
+.index_link{
+  color: #f7dfc8;
+  text-decoration: none;
+}
+
+.index_link:hover{
+  text-shadow: 2px 2px black;
+}
+
+.article_title{
+  max-width: 25vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #f7dfc8;
+}

@@ -1,5 +1,5 @@
 <p>
-  <b>Commenter:</b>
+  <b>Author:</b>
   <%= comment.commenter %>
 </p>
 
@@ -9,5 +9,5 @@
 </p>
 
 <p>
-  <%= link_to 'Destroy Comment', [comment.article, comment], method: :delete, data: { confirm: 'Are you sure?'} %>
+  <%= link_to image_tag("delete.png", class: 'logo'), [comment.article, comment], method: :delete, data: { confirm: 'Are you sure?'}%>
 </p>
