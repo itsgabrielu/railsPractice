@@ -23,7 +23,7 @@ h1 {
 }
 
 .article_title{
-  max-width: 25vw;
+  max-width: 60vw;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
