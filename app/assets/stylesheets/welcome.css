@@ -19,3 +19,8 @@ body {
   text-decoration: none;
   color: #f7dfc8;
 }
+
+.nav_link:hover{
+  color: #eabc98;
+  transition-duration: 0.8s;
+}

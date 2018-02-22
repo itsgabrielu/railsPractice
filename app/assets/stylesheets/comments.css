@@ -11,6 +11,8 @@
   text-decoration: none;
 }
 .comment_del:hover{
-  color: #f7dfc8;
+  /* color: #f7dfc8; */
   text-decoration: line-through;
+  color: #eabc98;
+  transition-duration: 0.8s;
 }

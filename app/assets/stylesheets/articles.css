@@ -20,6 +20,7 @@ h1 {
 
 .index_link:hover{
   text-shadow: 2px 2px black;
+  transition-duration: 0.8s;
 }
 
 .article_title{
@@ -54,6 +55,7 @@ ul li{
 
 .input{
   border-radius: 4px;
+  background-color: #f7dfc8;
 }
 .body_input{
   max-height: 30vh;
