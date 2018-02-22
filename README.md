@@ -2,7 +2,7 @@
 
 Hi! I did the rails Getting Started guide [here](http://guides.rubyonrails.org/getting_started.html), to get myself familiarized with rails again.
 
-You may like to see the finished product on heroku [here]()
+You may like to see the finished product on heroku [here](https://railsprac.herokuapp.com/)
 
 * Ruby version
   * Ruby 2.5.0

@@ -40,7 +40,26 @@ ul li{
   display: inline-block;
   margin: 0 1vw 0 1vw;
 }
-.nav_link{
-  text-decoration: none;
-  color: #f7dfc8;
+
+.title_focus{
+  text-align: left;
+  border-style: groove;
+  border-radius: 5px;
+  padding: 3vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  margin: 0 auto;
+  width: 85vw;
+}
+
+.input{
+  border-radius: 4px;
+}
+.body_input{
+  max-height: 30vh;
+  max-width: 80vw;
+}
+.form_container {
+  margin: 0 auto;
+  text-align: center;
 }

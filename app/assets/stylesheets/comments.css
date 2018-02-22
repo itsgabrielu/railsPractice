@@ -1,0 +1,16 @@
+.comment_grid{
+  border-style: dotted;
+  padding: 2vh;
+  border-radius: 15px;
+  max-width: 80vw;
+  margin: 0 auto;
+  overflow: scroll;
+}
+.comment_del{
+  color: #f7dfc8;
+  text-decoration: none;
+}
+.comment_del:hover{
+  color: #f7dfc8;
+  text-decoration: line-through;
+}

@@ -1,14 +1,7 @@
 
-<p>
-  <b>Author:</b>
-  <%= comment.commenter %>
-</p>
-
-<p>
-  <b>Comment:</b>
-  <%= comment.body %>
-</p>
-
-<p>
-  <%= link_to image_tag("delete.png", class: 'logo'), [comment.article, comment], method: :delete, data: { confirm: 'Are you sure?'}%>
-</p>
+<div class='comment_grid'>
+  <i><%= comment.commenter %></i> :
+  <br>
+  <%= simple_format(comment.body) %>
+  <%= link_to 'delete', [comment.article, comment], method: :delete, data: { confirm: 'Are you sure?'}, class: 'comment_del'%>
+</div>

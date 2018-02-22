@@ -1,13 +1,13 @@
+<div class='form_container'>
 <%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
   <p>
-    <%= form.label :author %><br>
-    <%= form.text_field :commenter %>
+    <%= form.text_field :commenter, placeholder: 'Name', class: 'input' %>
   </p>
   <p>
-    <%= form.label :body %><br>
-    <%= form.text_field :body %>
+    <%= form.text_area(:body, placeholder:'Your response here', size: "500x6", class:'input body_input')%>
   </p>
   <p>
-    <%= form.submit %>
+    <%= form.submit "Reply" %>
   </p>
 <% end %>
+</div>

@@ -1,17 +1,14 @@
-<p>
-  <b>Title:</b>
-  <%= @article.title %>
-</p>
-
-<p>
-  <b>Text:</b>
+<p class='title_focus'>
+  <b> <%= @article.title %> </b>
+<br>
   <%= @article.text %>
 </p>
 
-<h2>Comments</h2>
+<h3>Comments (<%= @article.comments.length %>)</h3>
 <%= render @article.comments %>
 
-<h2>Add a comment</h2>
+<hr>
+<h2>Add comment</h2>
 <%= render 'comments/form' %>
 
 <ul>
